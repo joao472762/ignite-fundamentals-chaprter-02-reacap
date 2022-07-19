@@ -1,7 +1,10 @@
+import { Header } from "../../components/Header";
+import { DefalutLayoutContainer } from "./style";
+
 export function DefaultLayout(){
     return(
-        <div>
-            you achieve in defaultLayout men
-        </div>
+        <DefalutLayoutContainer>
+            <Header/>
+        </DefalutLayoutContainer>
     )
 }
