@@ -12,8 +12,9 @@ export const GlobalSyles = createGlobalStyle`
         background-color: ${props => props.theme["gray-900"]}
     }
     body,input,textarea,button{
+        color: ${props => props.theme["gray-100"]};
         font-size: 1rem;
-        font-family: 'Roboto' Arial, Helvetica, sans-serif;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
     }
     *:focus{
         outline:  none;

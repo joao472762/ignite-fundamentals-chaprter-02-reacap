@@ -7,7 +7,4 @@ export const DefalutLayoutContainer = styled.div`
     margin: 4.62rem auto 0 auto;
     border-radius: 8px;
     padding: 2.5rem;
-;
-  
-
 `
