@@ -32,7 +32,7 @@ export function Home(){
                     <div><span>0</span></div>
                     <div><span>0</span></div>
                 </CountDown>
-
+        
                 <CreateNewCycleButton type='submit' disabled>
                     <Play/> Começar
                 </CreateNewCycleButton>

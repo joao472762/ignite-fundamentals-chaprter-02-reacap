@@ -26,6 +26,7 @@ export const FormContainer = styled.section`
     display: flex;
     column-gap: .5rem;
     font-size: 1.125rem;
+    box-shadow: none;
 `
 
 const baseInput= styled.input`
