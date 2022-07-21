@@ -34,12 +34,14 @@ const baseInput= styled.input`
     background-color: transparent;
     font-weight: bold;
     text-align: center;
-    box-shadow: none;
     padding-bottom: 0.187rem;
     border-bottom: 0.187rem solid ${props => props.theme["gray-500"]};
 
     &::placeholder{
         color: ${props => props.theme["gray-500"]};
+    }
+    &:focus{
+        box-shadow: none;
     }
 
 `
@@ -77,19 +79,31 @@ export const CountDown = styled.section`
 
 `
 
-export const CreateNewCycleButton  = styled.button`
+export const BaseActionButton = styled.button`
     display: flex; 
     justify-content: center;
     align-items: center;
     column-gap:  .5rem;
 
     margin-top: -0.25rem;
-    background-color: ${props => props.theme["green-500"]};
     padding: 1.062rem 0;
     border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
     transition: .2 background-color ;
+
+    &:focus{
+        box-shadow: none;
+    }
+
+    svg{
+        font-size: 1.375rem;
+    }
+`
+
+export const CreateNewCycleButton = styled(BaseActionButton)`
+   
+    background-color: ${props => props.theme["green-500"]};
 
     &:not(:disabled):hover{
         background-color: ${props => props.theme["green-700"]};
@@ -99,8 +113,15 @@ export const CreateNewCycleButton  = styled.button`
         opacity: .7;
     }
     
-    svg{
-        font-size: 1.375rem;
+  
+`
+export const IntrruptButton = styled(BaseActionButton)`
+    background-color: ${props => props.theme["red-500"]};
+    transition: .3s background-color;
+
+    &:hover{
+        background-color: ${props => props.theme["red-700"]};
     }
+   
 `
 
