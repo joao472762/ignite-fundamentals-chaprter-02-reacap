@@ -20,65 +20,6 @@ export const HomeContainer = styled.main`
     }
 `
 
-
-
-export const FormContainer = styled.section`
-    display: flex;
-    column-gap: .5rem;
-    font-size: 1.125rem;
-    box-shadow: none;
-`
-
-const baseInput= styled.input`
-    font-size: 1.125rem;
-    background-color: transparent;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 0.187rem;
-    border-bottom: 0.187rem solid ${props => props.theme["gray-500"]};
-
-    &::placeholder{
-        color: ${props => props.theme["gray-500"]};
-    }
-    &:focus{
-        box-shadow: none;
-    }
-
-`
-
-export const TaskInput = styled(baseInput)`
-    flex: 1;
-`
-export const MinutesAmoutInput = styled(baseInput)`
-    width: 4.5rem;
-`
-
-export const CountDown = styled.section`
-    width: 100%;
-    display: flex;
-    column-gap: 1rem;
-
-    div{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 8rem;
-
-        font-size: 10rem;
-        font-family: 'Roboto Mono', monospace, sans-serif;
-        height: 12.187rem;
-        border-radius: 8px;
-        background: ${props => props.theme["gray-600"]};
-
-        &.separator{
-            background-color: transparent;
-            width: 5.06rem;
-            color: ${props => props.theme["green-500"]};
-        }
-    }
-
-`
-
 export const BaseActionButton = styled.button`
     display: flex; 
     justify-content: center;
