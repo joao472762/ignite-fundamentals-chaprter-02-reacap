@@ -1,25 +1,29 @@
 import styled from "styled-components";
 
 export const HistoryContent = styled.main`
-   
-    
-    margin-top: 3.125rem;
+    max-width: 58.1875rem;
+    flex: 1;
+    margin: 3.125rem auto 0 auto;
 `
 export const TableContainer = styled.div`
+    overflow: auto;
     font-size:  0.875rem;
     margin-top: 1rem;
-    overflow-x: auto;
+    display: flex;
     font-size: 1;
+    
 
 
     table{
+        flex: 1;
         display: flex;
         flex-direction: column;
         border-collapse: collapse;
+       
 
         thead{ 
             tr{
-                
+                width: 100%;
                 border-radius:  8px 8px 0px 0px;
                 flex: 1;
                 column-gap: 3.5rem;

@@ -1,8 +1,10 @@
+import { useContext } from "react";
+import { CycleContext } from "../../context/Cycle";
 import { CycleDescription } from "./components/CycleDescription";
 import { HistoryContent, TableContainer, TbodyWithoutCycles } from "./style";
 
 export function History(){
-    const cycles = [] as []
+    const {cycleList} = useContext(CycleContext)
     return(
         <HistoryContent>
             <h1>Meu histórico</h1>
@@ -15,20 +17,13 @@ export function History(){
                             <th>Início</th>
                             <th>Status</th>
                         </tr>
-                    </thead>
-                    {cycles.length != 0
-                        ?(
-                            <tbody>
-                                {cycles.map(cycle => {
-                                    return(
-                                        <CycleDescription/>
-                                    )
-                                })}
+                    </thead>   
+                    {cycleList
+                        ?   <tbody>
+                                {cycleList.map(cycle =><CycleDescription key={cycle.id} props={cycle}/>)}
                             </tbody>
-                        )
-                        :(
-                            <TbodyWithoutCycles/>
-                        )
+
+                        : <TbodyWithoutCycles/>
                     }
                 </table>
             </TableContainer>
