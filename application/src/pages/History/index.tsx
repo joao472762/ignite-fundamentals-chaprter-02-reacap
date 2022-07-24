@@ -18,7 +18,7 @@ export function History(){
                             <th>Status</th>
                         </tr>
                     </thead>   
-                    {cycleList
+                    {cycleList.length > 0
                         ?   <tbody>
                                 {cycleList.map(cycle =><CycleDescription key={cycle.id} props={cycle}/>)}
                             </tbody>

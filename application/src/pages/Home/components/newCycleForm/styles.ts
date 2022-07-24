@@ -21,6 +21,7 @@ const baseInput= styled.input`
     }
     &:focus{
         box-shadow: none;
+        border-bottom-color: ${props => props.theme["green-500"]};
     }
 
 `

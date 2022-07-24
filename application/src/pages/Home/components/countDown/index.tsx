@@ -19,7 +19,7 @@ export function CountDown() {
         if(activeCycle){
             interval = setInterval( () => {
                const timePassedInSeconds = differenceInSeconds
-               (new Date(), activeCycle.CreationDate)
+               (new Date(), new Date(activeCycle.CreationDate))
 
                if(timePassedInSeconds >=  totalSeconds){
                     markCycleAsFinished()

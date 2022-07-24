@@ -16,7 +16,7 @@ export function CycleDescription({props}:CycleDescriptionProps){
         InteruptedDate
     } = props
 
-    const timePassedCycleCreation =  formatDistanceToNow(CreationDate,{
+    const timePassedCycleCreation =  formatDistanceToNow(new Date(CreationDate),{
         addSuffix: true,
         locale: ptBR
     })

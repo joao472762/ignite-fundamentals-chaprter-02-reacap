@@ -11,6 +11,7 @@ export const TableContainer = styled.div`
     margin-top: 1rem;
     display: flex;
     font-size: 1;
+    max-height: 20.5rem;
     
 
 
